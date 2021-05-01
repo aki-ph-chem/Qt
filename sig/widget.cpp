@@ -1,26 +1,29 @@
 #include "widget.h"
 #include "ui_widget.h"
 
+#include<QPushButton>
 #include<QDebug>
 
 Widget::Widget(QWidget *parent)
     : QWidget(parent)
-    , ui(new Ui::Widget)
+
 {
-    ui->setupUi(this);
+    QPushButton *btn = new QPushButton("push",this);
+
+    connect(btn, &QPushButton::clicked,
+             this,&Widget::received);
 }
 
-Widget::~Widget()
-{
-    delete ui;
+Widget::~Widget(){
+
 }
 
-Qsize Widget::sizeHint() const
+QSize Widget::sizeHint() const
 {
-    return Qsize(300,200);
+    return QSize(300,200);
 }
 
 void Widget::received(){
 
-    dDebug() <<__FUNCTION__;
+    qDebug() <<__FUNCTION__;
 }
