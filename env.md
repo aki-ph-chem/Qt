@@ -50,4 +50,8 @@ argma 147氏著の　「Qt5/C++入門」に従って勉強していく
 
 # SS6 development tips
 
+# SS7
+
+# SS8 MainWindow
+
 
