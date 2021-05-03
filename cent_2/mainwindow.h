@@ -19,7 +19,7 @@ private:
     Ui::MainWindow *ui;
 
 public:
-    Qsize sizeHint() const override;
+    QSize sizeHint() const override;
 
 };
 #endif // MAINWINDOW_H

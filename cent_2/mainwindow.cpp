@@ -7,8 +7,11 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    QWidget *widget = new QWidget(this);
+    new QPushButton("push",widget);
+
     ui->setupUi(this);
-    initalizeCentralWidget();
+
 }
 
 MainWindow::~MainWindow()
@@ -21,18 +24,6 @@ QSize MainWindow::sizeHint() const
     return QSize(400,300);
 }
 
-
-void MainWindow::initalizeCentralWidget()
-{
-
-    QWidget *Widget = new QWidget(this);
-
-    new QPushButton("push",Widget);
-
-    setCentralWidget(Widget);
-
-
-}
 
 
 
