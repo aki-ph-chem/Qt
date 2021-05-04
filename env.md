@@ -54,4 +54,6 @@ argma 147氏著の　「Qt5/C++入門」に従って勉強していく
 
 # SS8 MainWindow
 
+# SS9 画面以外
+
 
